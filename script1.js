@@ -6,7 +6,7 @@ console.log('ASYNC AWAIT EXAMPLE');
 
 const loadPokemons = async () => {
   try {
-    let response = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=100'); // Asynchronous operation - must be awaited
+    let response = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=50'); // Asynchronous operation - must be awaited
 
     console.log('response', response);
     const data = await response.json(); // Asynchronous operation - must be awaited
@@ -37,7 +37,7 @@ const selectPokemon = listItem => {
     nameOfSelected.innerHTML = listItem.innerHTML.toUpperCase();
     nameOfSelected.style.visibility = 'visible';
     nameOfSelected.style.display = 'visible';
-    imageOfSelected.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`;
+    imageOfSelected.src="front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
 };
 
 loadPokemons();
